@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="500" height="25" tilewidth="30" tileheight="30" nextobjectid="899">
+ <tileset firstgid="1" name="tiles" tilewidth="30" tileheight="30" spacing="4" margin="1" tilecount="99" columns="9">
+  <image source="tiles3.png" width="334" height="372"/>
+ </tileset>
+ <tileset firstgid="100" name="portal" tilewidth="32" tileheight="32" tilecount="8" columns="2">
+  <image source="GravityPortalA.png" width="64" height="130"/>
+ </tileset>
+ <tileset firstgid="108" name="portal2" tilewidth="32" tileheight="32" tilecount="8" columns="2">
+  <image source="GravityPortalB.png" width="64" height="128"/>
+ </tileset>
+ <layer name="Platforms" width="500" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztnMluE0EURf03bL1lmbAKEkv+gCGEGf5foltKK8bqoea6t3yOdBYkqP263qu6mHZyPp1OZ0REREREREREREREzPI1IiIi2gswAm+eVefh9FJriG/7lLmL+z24zMoohK73feDXrq8basy13WCmYSRc5tk9C2fc7+Hb5PfeRdwQqntzpDlQXWOAFFzm2T0LZ9zv4cfkz95F3BCqe3OkOVBdY4AUXObZPQtn3O/h1+Tv3kXcEKp7c6Q5UF1jgBRc5tk9C2fc7+HP5N/eRdwQrffm3YprjDQHLucfQAgu8+yehTPu97BVJ9Sh9fqG9nb53rtGddWEGYaRcJln9yyccb+HvVkZ4WxXQ3VvXtfl3HvVNQZIofQ8b/0fXS7uWTjT+x5yexMyK85nuxqqWbNVl2PvVdcY2hPyrEmdkvN893ytWmtxH2Eqa88Qt0yhxT2sUaI3MbPieLaroZo1R3U59V51jeGYkGd+Mc8FR3iOWKr2JS8WHf990/v9cy1K9SZlVpzOdjVUz5XQuhx6r7rGcEzIeyv399uxlJjn67xwzfQR87xkb3JmxeFsV0M1a2LrUu696hrDCzFncqwpNYw8z1t54Zjpo+V56d6UOPuU94IaqlmTWpdi7z9MfuxdBPzH5ZzEnsktXKtThZx5PsoLt0wfKc9r9KZkvijuBTVUsyZ3DpR6/2nyc+8ibpy9eVDO85D6W5M6z6F54ZTpo+R5rd6UzPMFpb2ghmrWlJoDhd4/Tn7pXUQGpfdjC2L67pDnKfdVi5R5js0Ll0wfIc9r9qZGni8o7AU1VLOm9Bz07P3T5NeOrx/L9bq3zPO9MyI1A49wyvMFp3lOzQuHTHfP89q9qZnnCyPn+trnbPfWXDVras1Bbu9TzpYa51HI561DrzOv8/sL1/6c8jp758DltY8M/bsxPwd8be/8js3zHI5mI+Tz/DGvVWI9VDPdOc9b9KbFPJcg9Tzd+t7a10PPr5zzQXWflDijc36nQ40z/hUiIiLae0ZERERERERERERExGz/AcpxIR8=
+  </data>
+ </layer>
+ <objectgroup name="platforms">
+  <object id="428" x="0" y="750">
+   <polyline points="0,0 0,-120 15000,-120 15000,0 0,0"/>
+  </object>
+  <object id="429" x="0" y="120">
+   <polyline points="0,0 0,-120 15000,-120 15000,0 0,0"/>
+  </object>
+  <object id="743" x="1140" y="630">
+   <polyline points="0,0 0,-30 30,-30 30,0 0,0"/>
+  </object>
+  <object id="745" x="1260" y="630">
+   <polyline points="0,0 0,-30 30,-30 30,0 0,0"/>
+  </object>
+  <object id="746" x="1260" y="600">
+   <polyline points="0,0 0,-30 30,-30 30,0 0,0"/>
+  </object>
+  <object id="747" x="1380" y="570">
+   <polyline points="0,0 0,-30 30,-30 30,0 0,0"/>
+  </object>
+  <object id="748" x="1380" y="600">
+   <polyline points="0,0 0,-30 30,-30 30,0 0,0"/>
+  </object>
+  <object id="749" x="1380" y="630">
+   <polyline points="0,0 0,-30 30,-30 30,0 0,0"/>
+  </object>
+  <object id="751" x="1800" y="630">
+   <polyline points="0,0 0,-30 210,-30 210,0 0,0"/>
+  </object>
+  <object id="752" x="2070" y="600">
+   <polyline points="0,0 0,30 270,30 270,0 0,0"/>
+  </object>
+  <object id="753" x="2400" y="630">
+   <polyline points="0,0 0,-60 240,-60 240,0 0,0"/>
+  </object>
+  <object id="756" x="3270" y="420">
+   <polyline points="0,0 0,-30 90,-30 90,0 0,0"/>
+  </object>
+  <object id="757" x="3540" y="420">
+   <polyline points="0,0 0,-30 90,-30 90,0 0,0"/>
+  </object>
+  <object id="759" x="3870" y="420">
+   <polyline points="0,0 0,-30 120,-30 120,0 0,0"/>
+  </object>
+  <object id="763" x="5340" y="120">
+   <polyline points="0,0 0,360 60,360 60,0 0,0"/>
+  </object>
+  <object id="764" x="5700" y="630">
+   <polyline points="0,0 0,-30 30,-30 30,-60 60,-60 60,-90 90,-90 90,-120 120,-120 120,-150 150,-150 150,-180 180,-180 180,-210 210,-210 210,-240 240,-240 240,-270 270,-270 270,-240 300,-240 300,-210 330,-210 330,-180 360,-180 360,-150 390,-150 390,-120 420,-120 420,-90 450,-90 450,-60 480,-60 480,-30 510,-30 510,0 0,0"/>
+  </object>
+  <object id="765" x="8790" y="630">
+   <polyline points="0,0 0,-30 30,-30 30,-60 60,-60 60,-90 90,-90 90,-120 120,-120 120,-150 150,-150 150,-180 180,-180 180,-210 210,-210 210,-240 240,-240 240,-270 270,-270 270,-240 300,-240 300,-210 330,-210 330,-180 360,-180 360,-150 390,-150 390,-120 420,-120 420,-90 450,-90 450,-60 480,-60 480,-30 510,-30 510,0 0,0"/>
+  </object>
+  <object id="767" x="6630" y="120">
+   <polyline points="0,0 0,240 330,240 330,0 0,0"/>
+  </object>
+  <object id="768" x="7380" y="630">
+   <polyline points="0,0 0,-240 330,-240 330,0 0,0"/>
+  </object>
+  <object id="770" x="8100" y="360">
+   <polyline points="0,0 0,-240 330,-240 330,0 0,0"/>
+  </object>
+  <object id="773" x="9510" y="630">
+   <polyline points="0,0 0,-360 180,-360 180,-330 60,-330 60,0 0,0"/>
+  </object>
+  <object id="774" x="11520" y="630">
+   <polyline points="0,0 0,-30 240,-30 240,0 0,0"/>
+  </object>
+  <object id="775" x="11820" y="630">
+   <polyline points="0,0 0,-30 270,-30 270,0 0,0"/>
+  </object>
+  <object id="779" x="12270" y="120">
+   <polyline points="0,0 0,360 60,360 60,0 0,0"/>
+  </object>
+  <object id="781" x="13110" y="300">
+   <polyline points="0,0 0,-30 150,-30 150,0 0,0"/>
+  </object>
+  <object id="785" x="13410" y="270">
+   <polyline points="0,0 90,0 90,13.3333 59.3333,13.3333 60,360 0,360 0,0"/>
+  </object>
+  <object id="786" x="14400" y="630">
+   <polyline points="0,0 0,-30 600,-30 600,0 0,0"/>
+  </object>
+  <object id="789" x="14940" y="120">
+   <polyline points="0,0 0,330 60,330 60,0 0,0"/>
+  </object>
+  <object id="790" x="2730" y="540">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="792" x="2970" y="480">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="793" x="2850" y="510">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="795" x="4170" y="450">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="796" x="4230" y="480">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="797" x="4290" y="510">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="798" x="4350" y="540">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="830" x="0" y="750">
+   <polyline points="0,0 0,-750 15000,-750 15000,0 0,0"/>
+  </object>
+  <object id="835" x="3090" y="630">
+   <polyline points="0,0 0,-180 690,-180 690,-150 990,-150 990,-180 1080,-180 1080,0 0,0"/>
+  </object>
+  <object id="843" x="13770" y="420">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="844" x="13710" y="390">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="845" x="13530" y="300">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="846" x="13830" y="450">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="848" x="13650" y="360">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="849" x="13590" y="330">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="857" x="4410" y="570">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="858" x="13890" y="480">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="859" x="13950" y="510">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="860" x="14010" y="540">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="861" x="14070" y="570">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="866" x="10140" y="510">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="867" x="9960" y="420">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="868" x="9780" y="330">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="869" x="9840" y="360">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="870" x="10260" y="570">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="871" x="10080" y="480">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="872" x="10020" y="450">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="873" x="9900" y="390">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="874" x="10200" y="540">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="875" x="9720" y="300">
+   <polyline points="0,0 0,13.25 29.875,13.25 30,0 0,0"/>
+  </object>
+  <object id="896" x="9510" y="120">
+   <polyline points="0,0 0,30 60,30 60,0 0,0"/>
+  </object>
+  <object id="898" x="12930" y="120">
+   <polyline points="0,0 0,30 360,30 360,0 0,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="death">
+  <object id="431" x="570" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="432" x="780" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="433" x="810" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="434" x="1110" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="435" x="1560" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="436" x="1590" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="439" x="2190" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="442" x="3270" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="443" x="3330" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="444" x="3300" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="445" x="3540" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="446" x="3570" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="447" x="3600" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="448" x="3870" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="449" x="3900" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="450" x="3930" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="451" x="3960" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="453" x="4860" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="454" x="5100" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="455" x="5130" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="456" x="5670" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="457" x="5700" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="458" x="5730" y="570">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="459" x="5790" y="510">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="460" x="5820" y="480">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="461" x="5760" y="540">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="462" x="5880" y="420">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="463" x="5940" y="360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="464" x="5850" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="465" x="5910" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="466" x="5970" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="467" x="6000" y="420">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="468" x="6030" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="469" x="6060" y="480">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="470" x="6150" y="570">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="471" x="6090" y="510">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="472" x="6210" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="473" x="6120" y="540">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="474" x="6180" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="475" x="9300" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="476" x="9030" y="360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="477" x="9000" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="478" x="9210" y="540">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="479" x="8940" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="480" x="8880" y="510">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="481" x="8910" y="480">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="482" x="8850" y="540">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="483" x="8970" y="420">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="484" x="9180" y="510">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="485" x="8760" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="486" x="9060" y="390">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="487" x="8790" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="488" x="9090" y="420">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="489" x="9240" y="570">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="490" x="9120" y="450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="491" x="8820" y="570">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="492" x="9150" y="480">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="493" x="9270" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="494" x="6810" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="495" x="6780" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="496" x="6750" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="497" x="6720" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="498" x="6690" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="499" x="6660" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="500" x="6840" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="501" x="6870" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="502" x="6900" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="503" x="6930" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="504" x="6960" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="505" x="6630" y="330" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="506" x="6630" y="360" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="507" x="6630" y="300" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="508" x="6630" y="240" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="509" x="6630" y="270" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="510" x="6630" y="210" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="511" x="6630" y="180" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="512" x="6630" y="150" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="513" x="6960" y="180" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="514" x="6960" y="120" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="515" x="6960" y="210" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="516" x="6960" y="150" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="517" x="6960" y="240" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="518" x="6960" y="330" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="519" x="6960" y="300" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="520" x="6960" y="270" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="630" x="7380" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="631" x="7710" y="480" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="632" x="7710" y="570" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="633" x="7380" y="630" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="634" x="7620" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="635" x="7710" y="510" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="636" x="7710" y="450" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="637" x="7410" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="638" x="7380" y="480" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="639" x="7650" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="640" x="7500" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="641" x="7440" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="642" x="7380" y="450" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="643" x="7380" y="600" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="644" x="7710" y="390" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="645" x="7530" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="646" x="7710" y="600" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="647" x="7590" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="648" x="7380" y="540" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="649" x="7380" y="510" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="650" x="7560" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="651" x="7710" y="420" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="652" x="7680" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="653" x="7470" y="390" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="654" x="7380" y="420" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="655" x="7710" y="540" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="656" x="7380" y="570" rotation="-810">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="657" x="8430" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="658" x="8100" y="270" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="659" x="8100" y="180" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="660" x="8430" y="120" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="661" x="8190" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="662" x="8100" y="240" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="663" x="8100" y="300" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="664" x="8400" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="665" x="8430" y="270" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="666" x="8160" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="667" x="8310" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="668" x="8370" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="669" x="8430" y="300" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="670" x="8430" y="150" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="671" x="8100" y="360" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="672" x="8280" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="673" x="8100" y="150" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="674" x="8220" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="675" x="8430" y="210" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="676" x="8430" y="240" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="677" x="8250" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="678" x="8100" y="330" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="679" x="8130" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="680" x="8340" y="360" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="681" x="8430" y="330" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="682" x="8100" y="210" rotation="-450">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="683" x="8430" y="180" rotation="-630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="684" x="10770" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="685" x="10980" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="686" x="11010" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="687" x="11220" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="688" x="11190" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="689" x="11370" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="690" x="11400" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="691" x="11760" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="692" x="11790" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="693" x="11910" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="694" x="11940" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="695" x="12060" y="600">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="696" x="12600" y="120" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="697" x="12750" y="120" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="701" x="13110" y="270" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="703" x="13140" y="270" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="704" x="13170" y="270" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="705" x="13200" y="270" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="706" x="13230" y="270" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="707" x="13590" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="708" x="13470" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="709" x="13500" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="710" x="13560" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="711" x="13530" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="712" x="13740" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="713" x="13620" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="714" x="13650" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="715" x="13710" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="716" x="13680" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="717" x="14010" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="718" x="13890" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="719" x="13950" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="720" x="13860" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="721" x="13830" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="722" x="13920" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="723" x="13980" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="724" x="13800" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="725" x="14040" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="726" x="13770" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="738" x="14550" y="600" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="762" x="5340" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="777" x="12270" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="782" x="13440" y="120" rotation="-180">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="787" x="14940" y="600" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="826" x="1170" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="827" x="1200" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="829" x="1290" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="832" x="1320" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="833" x="1350" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="834" x="1230" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="853" x="2010" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="854" x="2040" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="855" x="2340" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="856" x="2370" y="630">
+   <polyline points="0,0 -0.0909091,-1 0.818182,-0.909091 0.909091,-2.90909 2.81818,-2.90909 2.81818,-1 4.72727,-1 4.81818,-3 6.72727,-3 6.90909,-5 8.81818,-5 9,-6.90909 10.9091,-7 11.0909,-5.18182 13.0909,-5.18182 13,-3.36364 17,-3.27273 16.9091,-5 19.1818,-5.09091 19.0909,-6.72727 21.1818,-7 20.9091,-5.27273 22.9091,-5.18182 23,-3.18182 25,-3.18182 25,-4.72727 27.0909,-4.72727 27.2727,-3.18182 29.8182,-3.09091 30,0 0,0"/>
+  </object>
+  <object id="864" x="14070" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="865" x="14370" y="630" rotation="-360">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="876" x="2640" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="877" x="2670" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="878" x="2700" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="879" x="2730" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="880" x="2760" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="881" x="2880" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="882" x="2790" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="883" x="2850" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="884" x="2820" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="885" x="2910" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="886" x="3030" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="887" x="2940" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="888" x="3000" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="889" x="2970" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="890" x="3060" y="630">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="891" x="3090" y="510" rotation="-90">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="892" x="3090" y="600" rotation="-90">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="893" x="3090" y="540" rotation="-90">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+  <object id="894" x="3090" y="570" rotation="-90">
+   <polyline points="0,0 14.3333,-30.6667 30,0 0,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="gravity">
+  <object id="822" x="12300" y="480">
+   <polyline points="0,0 0,147"/>
+  </object>
+  <object id="823" x="13440" y="150">
+   <polyline points="0,0 0,120"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="win">
+  <object id="825" x="14970" y="450">
+   <polyline points="0,0 0,120"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="boat">
+  <object id="850" x="9540" y="150">
+   <polyline points="0,0 0,120"/>
+  </object>
+  <object id="851" x="5370" y="480">
+   <polyline points="0,0 0,150"/>
+  </object>
+ </objectgroup>
+</map>
